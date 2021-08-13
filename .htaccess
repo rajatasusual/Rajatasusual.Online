@@ -1,1 +1,4 @@
-DirectoryIndex maintenance.html home.html
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/home.html$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js)$
+RewriteRule .* /home.html [L,R=302]
