@@ -1584,12 +1584,6 @@ content
 .art-banner .art-banner-overlay .art-banner-title h1 {
   color: #fafafc;
 }
-.art-banner .art-banner-overlay .art-banner-photo {
-  width: 390px;
-  position: absolute;
-  right: 30px;
-  bottom: 0;
-}
 
 /* ----- typing code ----- */
 .art-code {
@@ -2526,7 +2520,7 @@ content (after 1600px)
     font-size: 42px;
   }
   .art-banner .art-banner-overlay .art-banner-photo {
-    width: 360px;
+    width: 200px;
   }
 }
 /* ------------------------------
@@ -2544,7 +2538,7 @@ content (after 1400px)
     font-size: 36px;
   }
   .art-banner .art-banner-overlay .art-banner-photo {
-    width: 320px;
+    width: 200px;
   }
 }
 /* ------------------------------
