@@ -664,7 +664,10 @@ app marcup
   margin-left: auto;
   pointer-events: all;
   font-size: 14px;
-  padding: 30px;
+}
+.art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header .art-info-bar-btn img{
+  height: 50px;
+  width: 50px;
 }
 .art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header .art-info-bar-btn.art-disabled {
   opacity: 0;
