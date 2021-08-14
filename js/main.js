@@ -397,12 +397,24 @@ $(function () {
       $(this).children('.sub-menu').toggleClass('art-active');
     } else {
       $('.art-menu-bar-btn , .art-menu-bar , .art-info-bar , .art-content , .art-menu-bar-btn , .art-info-bar-btn').removeClass('art-active , art-disabled');
-      
+
       //making the menu item selected as active and adding subsequent label to division
       $('.main-menu .menu-item').removeClass('current-menu-item');
       $(this).addClass('current-menu-item');
       $('.art-current-page').text($('.current-menu-item a').text());
     }
+  });
+
+  $('.art-buttons-frame').on('click', function () {
+    var target = $(this).children()[0].pathname;
+    $('.main-menu .menu-item').removeClass('current-menu-item');
+    $('.main-menu .menu-item a').each(function () {
+      if ($(this)[0].pathname === target) {
+        $(this).parent().addClass('current-menu-item');
+        return;
+      }
+    });
+    $('.art-current-page').text($('.current-menu-item a').text());
   });
 
   $('.art-current-page').text($('.current-menu-item a').text());
