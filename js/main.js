@@ -20,7 +20,7 @@ themeSwitch.addEventListener('click', () => {
     $('#bannerImage').attr('src', 'img/logo/light_animated.gif');
 
     $('#top_bg').attr('src', 'img/logo/white.png');
-    $('#banner').attr('src', 'img/logo/white.png');    
+    $('#banner').attr('src', 'img/logo/white.png');
   } else {
     $('#headerImage').attr('src', 'img/logo/dark_animated.gif');
     $('#bannerImage').attr('src', 'img/logo/dark_animated.gif');
