@@ -164,7 +164,7 @@ common
   --secondary_color: var(--desert_sand);
   --secondary_accent: var(--desert_sand95);
   --bg_secondary: var(--goldenrod_yellow);
-  --bg_overlay: var(--goldenrod_yellow40);
+  --bg_overlay: var(--goldenrod_yellow80);
   --header_start: var(--goldenrod_yellow40);
   --header_end: var(--goldenrod_yellow90);
   --header_bg: var(--goldenrod_yellow100);
@@ -771,7 +771,7 @@ app marcup
   z-index: 99;
   width: 100%;
   height: 70px;
-  background: var(--secondary_color);
+  background: linear-gradient(159deg, var(--primary_color_start) 0%, var(--primary_color_end) 100%);
   -webkit-box-shadow: 0 3px 8px 0 var(--bg_gradient);
   box-shadow: 0 3px 8px 0 var(--bg_gradient);
   padding: 0 30px;

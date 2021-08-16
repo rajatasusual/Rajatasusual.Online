@@ -9,6 +9,30 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 
 ------------------------------------------- */
 
+let theme = localStorage.getItem('rajatasusual-theme');
+if (theme != null && theme == 'light') {
+  document.body.classList.toggle('light-theme');
+  document.body.classList.toggle('dark-theme');
+
+  switchOnLight();
+}
+
+function switchOnLight() {
+  $('#headerImage').attr('src', 'img/logo/light_animated.gif');
+  $('#bannerImage').attr('src', 'img/logo/light_animated.gif');
+
+  $('#top_bg').attr('src', 'img/logo/white.png');
+  $('#banner').attr('src', 'img/logo/white.png');
+}
+
+function switchOffLight() {
+  $('#headerImage').attr('src', 'img/logo/dark_animated.gif');
+  $('#bannerImage').attr('src', 'img/logo/dark_animated.gif');
+
+  $('#top_bg').attr('src', 'img/logo/black.png');
+  $('#banner').attr('src', 'img/logo/black.png');
+}
+
 const themeSwitch = document.querySelector('#themeSwitch');
 
 themeSwitch.addEventListener('click', () => {
@@ -16,17 +40,11 @@ themeSwitch.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
   themeSwitch.classList.toggle('art-active-lang');
   if (document.body.classList.contains('light-theme')) {
-    $('#headerImage').attr('src', 'img/logo/light_animated.gif');
-    $('#bannerImage').attr('src', 'img/logo/light_animated.gif');
-
-    $('#top_bg').attr('src', 'img/logo/white.png');
-    $('#banner').attr('src', 'img/logo/white.png');
+    switchOnLight();
+    localStorage.setItem("rajatasusual-theme", "light");
   } else {
-    $('#headerImage').attr('src', 'img/logo/dark_animated.gif');
-    $('#bannerImage').attr('src', 'img/logo/dark_animated.gif');
-
-    $('#top_bg').attr('src', 'img/logo/black.png');
-    $('#banner').attr('src', 'img/logo/black.png');
+    switchOffLight();
+    localStorage.setItem("rajatasusual-theme", "dark");
   }
 });
 
