@@ -8,6 +8,28 @@ Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=Mille
 p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
 
 ------------------------------------------- */
+
+const themeSwitch = document.querySelector('#themeSwitch');
+
+themeSwitch.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+  document.body.classList.toggle('dark-theme');
+  themeSwitch.classList.toggle('art-active-lang');
+  if (document.body.classList.contains('light-theme')) {
+    $('#headerImage').attr('src', 'img/logo/light_animated.gif');
+    $('#bannerImage').attr('src', 'img/logo/light_animated.gif');
+
+    $('#top_bg').attr('src', 'img/logo/white.png');
+    $('#banner').attr('src', 'img/logo/white.png');    
+  } else {
+    $('#headerImage').attr('src', 'img/logo/dark_animated.gif');
+    $('#bannerImage').attr('src', 'img/logo/dark_animated.gif');
+
+    $('#top_bg').attr('src', 'img/logo/black.png');
+    $('#banner').attr('src', 'img/logo/black.png');
+  }
+});
+
 $(function () {
 
   "use strict";
