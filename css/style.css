@@ -131,6 +131,7 @@ common
   /*light theme colors*/
   /*palette URL https://coolors.co/110b11-a5d0a8-8cada7-f2f4cb-deb8a8-d48e76-c97b84-a85751-ffc49b-e5c1bd */
   --deep_purple: #312031;
+  --purple: #634063;
   --xiketic: #110B11;
   --turquoise_green: #A5D0A8;
   --desert_sand: #DEB8A8;
@@ -143,7 +144,8 @@ common
   --peach_crayola95: #FFC49BF2;
   --red: red;
   --goldenrod_yellow: #F2F4CB;
-  --goldenrod_yellow70: #F2F4CBB2;
+  --goldenrod_yellow40: #F2F4CB;
+  --goldenrod_yellow80: #F2F4CBCC;
   --goldenrod_yellow90: #F2F4CBE5;
   --goldenrod_yellow100: #F2F4CBFF;
   --old_rose: #C97B84;
@@ -153,32 +155,32 @@ common
 .light-theme {
   --body_text: var(--xiketic);
   --main_text: var(--deep_purple);
-  --secondary_text: var(--deep_purple);
+  --secondary_text: var(--purple);
   --bg_gradient: var(--baby_pink);
   --accent: var(--redwood);
-  --bg_color: var(--goldenrod_yellow70);
+  --bg_color: var(--goldenrod_yellow40);
   --bg_gradientsecondary: var(--desert_sand);
   --bg_highlight: var(--goldenrod_yellow);
   --secondary_color: var(--desert_sand);
   --secondary_accent: var(--desert_sand95);
   --bg_secondary: var(--goldenrod_yellow);
-  --bg_overlay: var(--desert_sand85);
-  --header_start: var(--goldenrod_yellow90);
+  --bg_overlay: var(--goldenrod_yellow40);
+  --header_start: var(--goldenrod_yellow40);
   --header_end: var(--goldenrod_yellow90);
   --header_bg: var(--goldenrod_yellow100);
   --warning: var(--red);
-  --card_start: var(--baby_pink);
-  --card_end: var(--desert_sand);
+  --card_start: var(--goldenrod_yellow);
+  --card_end: var(--peach_crayola);
   --some_otherbg: var(--desert_sand90);
   --font_highlight: var(--desert_sand95);
-  --form_start: var(--goldenrod_yellow90);
-  --form_end: var(--goldenrod_yellow100);
+  --form_start: var(--goldenrod_yellow);
+  --form_end: var(--goldenrod_yellow80);
   --primary_color_start: var(--middle_red);
-  --primary_color_end: var(--middle_red);
+  --primary_color_end: var(--old_rose);
   --some_bg: var(--peach_crayola95);
-  --overlay_start: var(--peach_crayola95);
-  --overlay_end: var(--peach_crayola95);
-  --another_overlay: var(--peach_crayola95);
+  --overlay_start: var(--goldenrod_yellow80);
+  --overlay_end: var(--goldenrod_yellow90);
+  --another_overlay: var(--peach_crayola);
   --another_overlayends: var(--goldenrod_yellow);
   --final_color: var(--goldenrod_yellow);
 }
