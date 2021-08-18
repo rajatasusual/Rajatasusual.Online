@@ -163,7 +163,7 @@ common
   --bg_gradientsecondary: var(--desert_sand);
   --bg_highlight: var(--goldenrod_yellow);
   --secondary_color: var(--desert_sand);
-  --secondary_accent: var(--desert_sand95);
+  --fancybox_overlay: var(--desert_sand85);
   --bg_secondary: var(--goldenrod_yellow);
   --bg_overlay: var(--goldenrod_yellow80);
   --header_start: var(--goldenrod_yellow40);
@@ -196,7 +196,7 @@ common
   --bg_gradientsecondary: var(--deep_blue10);
   --bg_highlight: var(--chalk40);
   --secondary_color: var(--night_shade);
-  --secondary_accent: var(--night_shade95);
+  --fancybox_overlay: var(--night_shade95);
   --bg_secondary: var(--umbra);
   --bg_overlay: var(--umbra85);
   --header_start: var(--umbra90);
@@ -2804,7 +2804,7 @@ portfolio
 }
 
 .fancybox-container .fancybox-bg {
-  background: var(--secondary_accent);
+  background: var(--fancybox_overlay);
 }
 
 .fancybox-is-open .fancybox-bg {
@@ -2883,6 +2883,14 @@ portfolio
 .fancybox-content .fancybox-image {
   -webkit-box-shadow: 0 3px 8px 0 var(--bg_gradient);
   box-shadow: 0 3px 8px 0 var(--bg_gradient);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+  z-index: 1045;
 }
 
 .fancybox-thumbs {
@@ -2907,7 +2915,6 @@ portfolio
 
 .art-recomendation-popup {
   background-color: transparent;
-  max-width: 50%;
 }
 
 /* ------------------------------
