@@ -1,13 +1,12 @@
-/* -------------------------------------------
 
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
+/*viewport hack for mobile browsers that hide elements behind the navigation bar */
 
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+/* end of hack */
 
-------------------------------------------- */
 const themeSwitch = document.querySelector('#themeSwitch');
 
 themeSwitch.addEventListener('click', () => {

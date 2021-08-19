@@ -1,14 +1,3 @@
-/* -------------------------------------------
-
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
-------------------------------------------- */
-
 /*--------------------------------------------
 
 0. theme config
@@ -693,7 +682,7 @@ app marcup
   top: 0;
   left: 0;
   width: calc(100vw - 30px);
-  height: calc(100vh - 30px);
+  height: calc(var(--vh, 1vh) * 100 - 30px);
   background: var(--secondary_color);
   z-index: 999999;
   display: -webkit-box;
@@ -738,7 +727,7 @@ app marcup
 
 .art-scroll-frame {
   width: 100%;
-  height: calc(100vh - 30px);
+  height: calc(var(--vh, 1vh) * 100 - 30px);
 }
 
 .scrollbar-track {
@@ -815,7 +804,7 @@ app marcup
   background: var(--secondary_color);
   width: 290px;
   min-width: 290px;
-  height: calc(100vh - 30px);
+  height: calc(var(--vh, 1vh) * 100 - 30px);
   position: relative;
   z-index: 999;
   -webkit-box-shadow: 0 3px 8px 0 var(--bg_gradient);
@@ -868,7 +857,7 @@ app marcup
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: calc(100vh - 30px);
+  height: calc(var(--vh, 1vh) * 100 - 30px);
   padding-right: 80px;
   -webkit-transition: 0.55s ease-in-out;
   transition: 0.55s ease-in-out;
@@ -900,7 +889,7 @@ app marcup
 .art-app .art-app-wrapper .art-app-container .art-menu-bar {
   background: var(--secondary_color);
   width: 230px;
-  height: calc(100vh - 30px);
+  height: calc(var(--vh, 1vh) * 100 - 30px);
   position: absolute;
   z-index: 99;
   right: -150px;
@@ -967,11 +956,11 @@ app marcup (after 920px)
   .art-preloader {
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   /* ----- scroll frame ----- */
   .art-scroll-frame {
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .art-app {
     padding: 0;
@@ -984,7 +973,7 @@ app marcup (after 920px)
   }
   .art-app .art-app-wrapper {
     border-radius: 0;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .art-app .art-app-wrapper .art-app-container {
     width: 100%;
@@ -996,7 +985,7 @@ app marcup (after 920px)
     position: absolute;
     left: -290px;
     width: 290px;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .art-app .art-app-wrapper .art-app-container .art-info-bar.art-active {
     -webkit-transform: translateX(290px);
@@ -1020,12 +1009,12 @@ app marcup (after 920px)
   .art-app .art-app-wrapper .art-app-container .art-content {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding-right: 0;
     padding-top: 70px;
   }
   .art-app .art-app-wrapper .art-app-container .art-content .art-scroll-frame {
-    height: calc(100vh - 70px);
+    height: calc(var(--vh, 1vh) * 100 - 70px);
   }
   .art-app .art-app-wrapper .art-app-container .art-content.art-active {
     -webkit-transform: none;
@@ -1039,7 +1028,7 @@ app marcup (after 920px)
     position: absolute;
     right: -230px;
     width: 230px;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .art-app .art-app-wrapper .art-app-container .art-menu-bar.art-active {
     -webkit-transform: translateX(-230px);
@@ -2800,7 +2789,7 @@ portfolio
 .fancybox-container {
   margin: 15px;
   width: calc(100vw - 30px);
-  height: calc(100vh - 30px);
+  height: calc(var(--vh, 1vh) * 100 - 30px);
 }
 
 .fancybox-container .fancybox-bg {
@@ -3016,7 +3005,7 @@ content (after 920px)
   .fancybox-container {
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .fancybox-toolbar {
     width: 100vw;
