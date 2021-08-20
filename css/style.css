@@ -809,12 +809,6 @@ app marcup
   z-index: 999;
   -webkit-box-shadow: 0 3px 8px 0 var(--bg_gradient);
   box-shadow: 0 3px 8px 0 var(--bg_gradient);
-  -webkit-transition: 0.55s ease-in-out;
-  transition: 0.55s ease-in-out;
-}
-
-.art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame {
-  padding: 0 15px;
 }
 
 .art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-info-bar-header {
@@ -849,8 +843,9 @@ app marcup
   pointer-events: none;
 }
 
-.art-app .art-app-wrapper .art-app-container .art-info-bar .art-info-bar-frame .art-scroll-frame .scroll-content {
-  padding: 240px 0 50px;
+.art-app .art-app-wrapper .art-app-container .art-info-bar .art-scroll-frame {
+  padding: 0 15px;
+  height: calc(var(--vh, 1vh) * 100 - 320px);
 }
 
 .art-app .art-app-wrapper .art-app-container .art-content {
@@ -986,6 +981,8 @@ app marcup (after 920px)
     left: -290px;
     width: 290px;
     height: calc(var(--vh, 1vh) * 100);
+    -webkit-transition: 0.55s ease-in-out;
+    transition: 0.55s ease-in-out;
   }
   .art-app .art-app-wrapper .art-app-container .art-info-bar.art-active {
     -webkit-transform: translateX(290px);
@@ -1013,8 +1010,9 @@ app marcup (after 920px)
     padding-right: 0;
     padding-top: 70px;
   }
-  .art-app .art-app-wrapper .art-app-container .art-content .art-scroll-frame {
-    height: calc(var(--vh, 1vh) * 100 - 70px);
+  .art-app .art-app-wrapper .art-app-container .art-info-bar .art-scroll-frame {
+    padding: 0 15px;
+    height: calc(var(--vh, 1vh) * 100 - 290px);
   }
   .art-app .art-app-wrapper .art-app-container .art-content.art-active {
     -webkit-transform: none;
@@ -1086,19 +1084,8 @@ info bar
 
 ------------------------------ */
 
-.art-info-bar {
-  padding: 0 15px;
-  /* ----- header ----- */
-  /* ----- name ----- */
-  /* ----- language skills ----- */
-  /* ----- hard skills ----- */
-  /* ----- knowledge ----- */
-  /* ----- info bar links ----- */
-  /* ----- social links ----- */
-}
-
 .art-info-bar .art-header {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   z-index: 99999;
