@@ -737,9 +737,8 @@ app marcup
   right: -1rem;
   width: 4rem;
   height: 4rem;
-  background: var(--primary_color_start);
   border-radius: 50%;
-  background: var(--primary_color_end);
+  background: var(--accent);
   box-shadow: 0px 5px 20px var(--overlay_start);
   transition: all 0.3s ease;
   z-index: 1;
@@ -754,7 +753,7 @@ app marcup
   left: 0;
   top: 0;
   border-radius: 50%;
-  background-color: var(--primary_color_start);
+  background-color: var(--accent);
 }
 
 .float-checkbox:checked~.float:before {
@@ -857,9 +856,8 @@ app marcup
   left: -1rem;
   width: 4rem;
   height: 4rem;
-  background: var(--primary_color_start);
   border-radius: 50%;
-  background: var(--primary_color_end);
+  background: var(--accent);
   box-shadow: 0px 5px 20px var(--overlay_start);
   transition: all 0.3s ease;
   z-index: 1;
@@ -874,7 +872,7 @@ app marcup
   left: 0;
   top: 0;
   border-radius: 50%;
-  background-color: var(--primary_color_start);
+  background-color: var(--accent);
 }
 
 .info-float:hover {

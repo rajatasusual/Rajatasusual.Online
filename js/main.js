@@ -40,8 +40,8 @@ function switchOnLight() {
 
   $('#top_bg').attr('src', 'img/logo/white.png');
   $('#banner').attr('src', 'img/logo/white.png');
-  $('#floaterImage').attr('src', 'img/icons/black_menu.png');
-  $('#infoFloaterImage').attr('src', 'img/logo/black.png');
+  $('#floaterImage').attr('src', 'img/icons/light_menu.png');
+  $('#infoFloaterImage').attr('src', 'img/logo/white.png');
 }
 
 function switchOffLight() {
@@ -50,8 +50,8 @@ function switchOffLight() {
 
   $('#top_bg').attr('src', 'img/logo/black.png');
   $('#banner').attr('src', 'img/logo/black.png');
-  $('#floaterImage').attr('src', 'img/icons/light_menu.png');
-  $('#infoFloaterImage').attr('src', 'img/logo/white.png');
+  $('#floaterImage').attr('src', 'img/icons/black_menu.png');
+  $('#infoFloaterImage').attr('src', 'img/logo/black.png');
 }
 
 $(function () {
