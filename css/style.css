@@ -799,7 +799,7 @@ app marcup
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: x-small;
+  font-size: medium;
   color: var(--main_text);
   box-shadow: 0 0.1rem 1rem var(--accent);
   transition: all 1s ease;
@@ -815,6 +815,10 @@ app marcup
   background-color: var(--accent);
 }
 
+.float-wheel .float-action-0 {
+  top: 4.5rem;
+  left: 4.5rem;
+}
 .float-wheel .float-action-1 {
   right: -1rem;
   top: 0;
