@@ -127,6 +127,7 @@ common
   --desert_sand: #DEB8A8;
   --desert_sand85: #DEB8A8D8;
   --desert_sand90: #DEB8A8E5;
+  --desert_sand50: #deb8a850;
   --desert_sand95: #DEB8A8F2;
   --redwood: #A85751;
   --baby_pink: #E5C1BD;
@@ -134,7 +135,6 @@ common
   --peach_crayola95: #FFC49BF2;
   --red: red;
   --goldenrod_yellow: #F2F4CB;
-  --goldenrod_yellow40: #F2F4CB;
   --goldenrod_yellow80: #F2F4CBCC;
   --goldenrod_yellow90: #F2F4CBE5;
   --goldenrod_yellow100: #F2F4CBFF;
@@ -148,14 +148,14 @@ common
   --secondary_text: var(--purple);
   --bg_gradient: var(--baby_pink);
   --accent: var(--redwood);
-  --bg_color: var(--goldenrod_yellow40);
+  --bg_color: var(--goldenrod_yellow80);
   --bg_gradientsecondary: var(--desert_sand);
   --bg_highlight: var(--goldenrod_yellow);
   --secondary_color: var(--desert_sand);
   --fancybox_overlay: var(--desert_sand85);
   --bg_secondary: var(--goldenrod_yellow);
   --bg_overlay: var(--goldenrod_yellow80);
-  --header_start: var(--goldenrod_yellow40);
+  --header_start: var(--goldenrod_yellow80);
   --header_end: var(--goldenrod_yellow90);
   --header_bg: var(--goldenrod_yellow100);
   --warning: var(--red);
@@ -168,10 +168,10 @@ common
   --primary_color_start: var(--middle_red);
   --primary_color_end: var(--old_rose);
   --some_bg: var(--peach_crayola95);
-  --overlay_start: var(--goldenrod_yellow80);
-  --overlay_end: var(--goldenrod_yellow90);
-  --another_overlay: var(--peach_crayola);
-  --another_overlayends: var(--goldenrod_yellow);
+  --overlay_start: var(--desert_sand90);
+  --overlay_end: var(--desert_sand85);
+  --another_overlay: var(--desert_sand50);
+  --another_overlayends: var(--desert_sand85);
   --final_color: var(--goldenrod_yellow);
 }
 
@@ -2021,11 +2021,6 @@ content
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, var(--overlay_start)), color-stop(50%, var(--overlay_end)), to(var(--another_overlay)));
   background-image: linear-gradient(90deg, var(--overlay_start) 15%, var(--overlay_end) 50%, var(--another_overlay) 100%);
-}
-
-.banner .banner-overlay.side-overlay {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(15%, var(--overlay_start)), color-stop(50%, var(--overlay_end)), to(var(--another_overlayends)));
-  background-image: linear-gradient(90deg, var(--overlay_start) 15%, var(--overlay_end) 50%, var(--another_overlayends) 100%);
 }
 
 .banner .banner-overlay .banner-title {

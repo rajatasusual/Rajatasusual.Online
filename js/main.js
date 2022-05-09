@@ -35,7 +35,7 @@ if (theme != null && theme == 'light') {
 }
 
 function switchOnLight() {
-  $('#headerImage').attr('src', 'img/logo/light_animated.gif');
+  $('#headerImage').attr('src', 'img/logo/redwood.png');
   $('#bannerImage').attr('src', 'img/logo/light_animated.gif');
 
   $('#top_bg').attr('src', 'img/logo/white.png');
@@ -45,7 +45,7 @@ function switchOnLight() {
 }
 
 function switchOffLight() {
-  $('#headerImage').attr('src', 'img/logo/dark_animated.gif');
+  $('#headerImage').attr('src', 'img/logo/gold.png');
   $('#bannerImage').attr('src', 'img/logo/dark_animated.gif');
 
   $('#top_bg').attr('src', 'img/logo/black.png');
