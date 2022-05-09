@@ -37,6 +37,36 @@
       <!-- app container start -->
       <div class="app-container">
 
+        <!-- floating button start -->
+        <div class="float-wrapper">
+          <input id="floatCheckbox" type="checkbox" class="float-checkbox" />
+          <label class="float" for="floatCheckbox">
+            <span class="float-image"><img id="floaterImage" src="img/icons/light_menu.png"></span>
+          </label>
+          <div class="float-wheel">
+            <a class="float-action float-action-1" href="/history.html">
+              Timeline
+            </a>
+            <a class="float-action float-action-2" href="/contact.html">
+              Contact
+            </a>
+            <a class="float-action float-action-3" href="/blog-list.html">
+              Blog
+            </a>
+            <a  id="themeSwitch" class="float-action float-action-4" href="#"><i class="fas fa-adjust"></i></a>
+          </div>
+        </div>
+        <!-- floating button end -->
+
+        <!-- floating info button start -->
+        <div class="info-float-wrapper">
+          <label class="info-float">
+            <span class="info-float-image"><img id="infoFloaterImage" src="img/logo/white.png"
+                alt="rajatasusual"></span>
+          </label>
+        </div>
+        <!-- floating button end -->
+
         <!-- info bar -->
         <div class="info-bar">
 
@@ -240,8 +270,7 @@
               <div class="links-frame p-15-15">
 
                 <!-- download cv button -->
-                <a href="files/Resume_Rajat.pdf" class="link" download>Download CV <i
-                    class="fas fa-download"></i></a>
+                <a href="files/Resume_Rajat.pdf" class="link" download>Download CV <i class="fas fa-download"></i></a>
 
               </div>
               <!-- links frame end -->
@@ -320,8 +349,7 @@
                         </div>
                         <!-- main title end -->
                         <!-- photo -->
-                        <img id="bannerImage" src="img/logo/dark_animated.gif" class="banner-photo"
-                          alt="Rajat Kumar">
+                        <img id="bannerImage" src="img/logo/dark_animated.gif" class="banner-photo" alt="Rajat Kumar">
                       </div>
                       <!-- banner overlay end -->
                     </div>
@@ -686,8 +714,7 @@
                         <!-- form field -->
                         <div class="form-field">
                           <!-- message textarea -->
-                          <textarea id="message" name="text" class="input" placeholder="Message"
-                            required></textarea>
+                          <textarea id="message" name="text" class="input" placeholder="Message" required></textarea>
                           <!-- label -->
                           <label for="message"><i class="far fa-envelope"></i></label>
                         </div>

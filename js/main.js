@@ -36,6 +36,8 @@ function switchOnLight() {
 
   $('#top_bg').attr('src', 'img/logo/white.png');
   $('#banner').attr('src', 'img/logo/white.png');
+  $('#floaterImage').attr('src', 'img/icons/black_menu.png');
+  $('#infoFloaterImage').attr('src', 'img/logo/black.png');
 }
 
 function switchOffLight() {
@@ -44,6 +46,8 @@ function switchOffLight() {
 
   $('#top_bg').attr('src', 'img/logo/black.png');
   $('#banner').attr('src', 'img/logo/black.png');
+  $('#floaterImage').attr('src', 'img/icons/light_menu.png');
+  $('#infoFloaterImage').attr('src', 'img/logo/white.png');
 }
 
 $(function () {
@@ -412,7 +416,7 @@ $(function () {
     $(this).addClass('active');
   });
 
-  $('.info-bar-btn').on('click', function () {
+  $('.info-bar-btn, .info-float-image').on('click', function () {
     $('.info-bar').toggleClass('active');
     $('.menu-bar-btn').toggleClass('disabled');
   });
@@ -422,19 +426,19 @@ $(function () {
     $('.info-bar-btn').toggleClass('disabled');
   });
 
-  $('.info-bar-btn , .menu-bar-btn').on('click', function () {
+  $('.info-bar-btn , .menu-bar-btn, .info-float-image').on('click', function () {
     $('.content').toggleClass('active');
   });
 
   $('.curtain , .mobile-top-bar').on('click', function () {
-    $('.menu-bar-btn , .menu-bar , .info-bar , .content , .menu-bar-btn , .info-bar-btn').removeClass('active , disabled');
+    $('.menu-bar-btn , .menu-bar , .info-bar, .info-float-image , .content , .menu-bar-btn , .info-bar-btn').removeClass('active , disabled');
   });
 
   $('.menu-item').on('click', function () {
     if ($(this).hasClass('menu-item-has-children')) {
       $(this).children('.sub-menu').toggleClass('active');
     } else {
-      $('.menu-bar-btn , .menu-bar , .info-bar , .content , .menu-bar-btn , .info-bar-btn').removeClass('active , disabled');
+      $('.menu-bar-btn , .menu-bar , .info-bar , .content , .menu-bar-btn , .info-bar-btn, .info-float-image').removeClass('active , disabled');
 
       //making the menu item selected as active and adding subsequent label to division
       $('.main-menu .menu-item').removeClass('current-menu-item');
