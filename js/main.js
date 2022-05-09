@@ -7,26 +7,30 @@ let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 /* end of hack */
 
-const themeSwitch = document.querySelector('#themeSwitch');
+const themeSwitch = document.querySelectorAll('#themeSwitch, #themSwitchFloating');
 
-themeSwitch.addEventListener('click', () => {
-  document.body.classList.toggle('light-theme');
-  document.body.classList.toggle('dark-theme');
-  themeSwitch.classList.toggle('active-lang');
-  if (document.body.classList.contains('light-theme')) {
-    switchOnLight();
-    localStorage.setItem("rajatasusual-theme", "light");
-  } else {
-    switchOffLight();
-    localStorage.setItem("rajatasusual-theme", "dark");
-  }
+themeSwitch.forEach(item => {
+  item.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
+    item.classList.toggle('active-lang');
+    if (document.body.classList.contains('light-theme')) {
+      switchOnLight();
+      localStorage.setItem("rajatasusual-theme", "light");
+    } else {
+      switchOffLight();
+      localStorage.setItem("rajatasusual-theme", "dark");
+    }
+  })
 });
 
 let theme = localStorage.getItem('rajatasusual-theme');
 if (theme != null && theme == 'light') {
   document.body.classList.toggle('light-theme');
   document.body.classList.toggle('dark-theme');
-  themeSwitch.classList.toggle('active-lang');
+  themeSwitch.forEach(item => {
+    item.classList.toggle('active-lang');
+  });
   switchOnLight();
 }
 
