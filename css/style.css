@@ -717,7 +717,7 @@ app marcup
   z-index: 2;
 }
 
-.float-image img{
+.float-image img {
   position: absolute;
   height: 3em;
   width: 3em;
@@ -819,6 +819,7 @@ app marcup
   top: 4.5rem;
   left: 4.5rem;
 }
+
 .float-wheel .float-action-1 {
   right: -1rem;
   top: 0;
@@ -846,7 +847,8 @@ app marcup
   left: 3rem;
   z-index: 2;
 }
-.info-float-image img{
+
+.info-float-image img {
   position: absolute;
   height: 5em;
   width: 5em;
@@ -3122,6 +3124,22 @@ content (after 1200px)
 
   .grid.grid-3-col .grid-item {
     width: 50%;
+  }
+}
+
+/* ------------------------------
+
+content (after 1024px)
+
+------------------------------ */
+
+@media screen and (min-width: 1024px) {
+  .info-float-wrapper {
+    display: none !important;
+  }
+
+  .float-wrapper {
+    display: none !important;
   }
 }
 
