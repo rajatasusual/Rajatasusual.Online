@@ -35,23 +35,23 @@ if (theme != null && theme == 'light') {
 }
 
 function switchOnLight() {
-  $('#headerImage').attr('src', 'img/logo/redwood.png');
-  $('#bannerImage').attr('src', 'img/logo/light_animated.gif');
+  $('#headerImage').attr('src', '/img/logo/redwood.png');
+  $('#bannerImage').attr('src', '/img/logo/light_animated.gif');
 
-  $('#top_bg').attr('src', 'img/logo/white.png');
-  $('#banner').attr('src', 'img/logo/white.png');
-  $('#floaterImage').attr('src', 'img/icons/light_menu.png');
-  $('#infoFloaterImage').attr('src', 'img/logo/white.png');
+  $('#top_bg').attr('src', '/img/logo/white.png');
+  $('#banner').attr('src', '/img/logo/white.png');
+  $('#floaterImage').attr('src', '/img/icons/light_menu.png');
+  $('#infoFloaterImage').attr('src', '/img/logo/white.png');
 }
 
 function switchOffLight() {
-  $('#headerImage').attr('src', 'img/logo/gold.png');
-  $('#bannerImage').attr('src', 'img/logo/dark_animated.gif');
+  $('#headerImage').attr('src', '/img/logo/gold.png');
+  $('#bannerImage').attr('src', '/img/logo/dark_animated.gif');
 
-  $('#top_bg').attr('src', 'img/logo/black.png');
-  $('#banner').attr('src', 'img/logo/black.png');
-  $('#floaterImage').attr('src', 'img/icons/black_menu.png');
-  $('#infoFloaterImage').attr('src', 'img/logo/black.png');
+  $('#top_bg').attr('src', '/img/logo/black.png');
+  $('#banner').attr('src', '/img/logo/black.png');
+  $('#floaterImage').attr('src', '/img/icons/black_menu.png');
+  $('#infoFloaterImage').attr('src', '/img/logo/black.png');
 }
 
 $(function () {
@@ -292,7 +292,7 @@ $(function () {
   $("#form").submit(function () {
     $.ajax({
       type: "POST",
-      url: "mail.php",
+      url: "/mail.php",
       data: $(this).serialize()
     }).done(function () {
 
