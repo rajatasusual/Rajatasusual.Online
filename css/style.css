@@ -327,6 +327,7 @@ a:focus {
 
 .table {
   color: var(--body_text);
+  text-align: right;
 }
 
 .table ul {
@@ -1522,12 +1523,6 @@ info bar
   color: var(--body_text) !important;
   position: relative;
   left: 45% !important;
-}
-
-.info-bar .lang-skills .lang-skills-item .cirkle-progress .progressbar-text:after {
-  content: '%';
-  position: absolute;
-  right: -7px;
 }
 
 .info-bar .hard-skills .hard-skills-item {
