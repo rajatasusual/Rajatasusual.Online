@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IBM Jeev ❄️</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+
+  <link rel="stylesheet" href="./search/style.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- Canvas -->
+  <canvas class="orb-canvas"></canvas>
+  <!-- Overlay -->
+  <div class="overlay">
+    <!-- Overlay inner wrapper -->
+    <div class="overlay__inner">
+      <!-- Title -->
+      <h1 class="overlay__title">
+        Welcome to IBM
+        <span class="text-gradient">JEEV</span>
+      </h1>
+      <!-- Description -->
+      <p class="overlay__description">
+        Start with searching in
+        <strong>your natural language</strong>
+      </p>
+
+      <div class="search">
+        <form>
+          <input type="text">
+        </form>
+        <div class="bar">
+          <div class="icon">
+            <i></i>
+          </div>
+        </div>
+        <div class="close"></div>
+        <ul>
+          <li>
+            <a href="https://socgen.com" target="_blank">
+              <img
+                src="https://play-lh.googleusercontent.com/iC5BWs2LnbZmkTD2PHVfOypPUinF7SY7e39h0TY9_bwyrC_cTqY-gJ20NXb9-IZSBg">
+              <h5>Societe Generale</h5>
+              <p>Published and cited the report at</p>
+              <span>https://socgen.com/</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.clarity.ai/" target="_blank">
+              <img class="queble"
+                src="https://cdn.dribbble.com/users/1763851/avatars/normal/0e0aa5c6da81f17d43efa9c92c76a70d.png">
+              <h5>Clarity.ai</h5>
+              <p>Citing and attesting more at</p>
+              <span>http://clarity.ai</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Buttons -->
+      <div class="overlay__btns">
+
+        <button class="overlay__btn overlay__btn--transparent">
+          <a href="./webapp/index.html">
+            Login
+          </a>
+        </button>
+
+        <button class="overlay__btn">
+          <span>Sign Up</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="./search/script.js"></script>
+
+</body>
+
+</html>

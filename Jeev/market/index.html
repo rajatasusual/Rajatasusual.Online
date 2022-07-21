@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IBM Jeev ❄️</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+</head>
+
+<body>
+  <!-- Canvas -->
+  <canvas class="orb-canvas"></canvas>
+  <div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    </svg>
+  </div>
+  <div class="app">
+    <div class="header">
+      <div class="menu-logo">IBM <span class="text-gradient">JEEV </span></div>
+      <div class="header-menu">
+        <a class="menu-link" href="../webapp/index.html">Dashboard</a>
+        <a class="menu-link notify" href="#">Your Work</a>
+        <a class="menu-link" href="../assistant/index.html">Discover</a>
+        <a class="menu-link notify is-active" href="#">Market</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Your Repository">
+      </div>
+      <div class="header-profile">
+        <div class="notification">
+          <span class="notification-number">3</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="feather feather-bell">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+          </svg>
+        </div>
+        <svg viewBox="0 0 512 512" fill="currentColor">
+          <path
+            d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z" />
+        </svg>
+        <img class="profile-img"
+          src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="">
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="main-container">
+        <main class="responsive-wrapper">
+          <div class="page-title">
+            <h1>Your Customized Updates</h1>
+          </div>
+          <div class="magazine-layout">
+            <div class="magazine-column">
+              <article class="article">
+                <h2 class="article-title article-title--large">
+                  <a href="#" class="article-link">Embracing <mark class="mark mark--primary">ESG
+                      transformation</mark></a>
+                </h2>
+                <div class="article-excerpt">
+                  <p>How asset managers are leveraging regulation to drive value creation</p>
+                  <p>Environmental, Social and Governance (ESG) issues
+                    are now front of mind for the asset management industry.
+                    The trend has been driven by changing public attitudes,
+                    increased investor demand for ESG-focused funds, and a
+                    realisation of the commercial growth opportunities.</p>
+                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-3.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>David Sherof</dt>
+                      <dd>Reporter</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <h2 class="article-title article-title--medium">
+                  <a href="#" class="article-link">The Founder's Guide to Actually Understanding Users Nowadays</a>
+                </h2>
+                <div class="article-creditation">
+                  <p>By Johnathan O'Connell, Andrew Van Dam, Aaron Gregg and Alyssa Fowers</p>
+                </div>
+              </article>
+            </div>
+            <div class="magazine-column">
+              <article class="article">
+                <figure class="article-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+                </figure>
+                <h2 class="article-title article-title--medium">
+                  <a href="#" class="article-link">Finding a Sustainable Path Through ESG Jungle</a>
+                </h2>
+                <div class="article-excerpt">
+                  <p>The environmental, social and governance (ESG) investment
+                    trend is accelerating and simultaneously becoming more complex.
+                    Appetite to invest in these strategies is growing, the approach investors
+                    are taking to ESG is becoming more sophisticated as their understanding
+                    deepens, and regulators are sharpening their scrutiny of the data and
+                    disclosures that underlie ESG strategies.</p>
+                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-2.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>James Robert</dt>
+                      <dd>Editor</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="magazine-column">
+              <article class="article">
+                <figure class="article-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1512521743077-a42eeaaa963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" />
+                </figure>
+                <h2 class="article-title article-title--small">
+                  <a href="#" class="article-link">Peregrine: The <mark class="mark mark--secondary">ESG
+                      Report</mark>2022</a>
+                </h2>
+                <div class="article-creditation">
+                  <p>By Jonathan O'Connell</p>
+                </div>
+              </article>
+              <article class="article">
+                <figure class="article-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1569234817121-a2552baf4fd4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+                </figure>
+                <h2 class="article-title article-title--small">
+                  <a href="#" class="article-link">What Does The Rise of ESG Mean for Asset Managers' Operations</a>
+                </h2>
+                <div class="article-creditation">
+                  <p>By Jonathan O'Connell</p>
+                </div>
+              </article>
+            </div>
+            <div class="magazine-column">
+              <article class="article">
+                <h2 class="article-title article-title--medium">
+                  <a href="#" class="article-link">Point of No Returns</a>
+                </h2>
+                <div class="article-excerpt">
+                  <p>A ranking of 75 of the world’s largest asset
+                    managers’ approaches to responsible investment</p>
+                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-2.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>James Robert</dt>
+                      <dd>Editor</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <small class="article-category">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28"
+                    height="22" viewBox="0 0 28 22">
+                    <defs>
+                      <clipPath id="clip-headphones">
+                        <rect width="28" height="22" />
+                      </clipPath>
+                    </defs>
+                    <g id="headphones" clip-path="url(#clip-headphones)">
+                      <g id="Group_2" data-name="Group 2" transform="translate(-3680 -609)">
+                        <path id="Subtraction_1" data-name="Subtraction 1"
+                          d="M5,12H5A5.274,5.274,0,0,1,0,6.5,5.274,5.274,0,0,1,5,1V12Z"
+                          transform="translate(3680 619)" />
+                        <rect id="Rectangle_18" data-name="Rectangle 18" width="2" height="11"
+                          transform="translate(3686 620)" />
+                        <path id="Subtraction_5" data-name="Subtraction 5"
+                          d="M1.243,12H.045C.015,11.67,0,11.334,0,11A11,11,0,0,1,18.778,3.222,10.925,10.925,0,0,1,22,11c0,.331-.015.667-.045,1h-1.2a14.108,14.108,0,0,0-2.685-6.241A8.982,8.982,0,0,0,11,2,8.982,8.982,0,0,0,3.929,5.759,14.109,14.109,0,0,0,1.243,12Z"
+                          transform="translate(3683 609)" />
+                        <path id="Subtraction_6" data-name="Subtraction 6"
+                          d="M5,0H5A5.274,5.274,0,0,0,0,5.5,5.274,5.274,0,0,0,5,11V0Z"
+                          transform="translate(3708 631) rotate(180)" />
+                        <rect id="Rectangle_23" data-name="Rectangle 23" width="2" height="11"
+                          transform="translate(3700 620)" />
+                        <path id="Path_8" data-name="Path 8" d="M.156-.031,2.125-1.687,2,2H0Z"
+                          transform="translate(3683 619)" />
+                        <path id="Path_9" data-name="Path 9" d="M1.969-.031,0-1.687.125,2h2Z"
+                          transform="translate(3702.875 619)" />
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Podcast</span>
+                </small>
+                <h2 class="article-title article-title--medium">
+                  <a href="#" class="article-link">ESG in Asset Management <mark class="mark mark--tertiary">A Global
+                      Perspective</mark></a>
+                </h2>
+                <div class="article-podcast-player">
+                  <button class="podcast-play-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#000000"
+                      viewBox="0 0 256 256">
+                      <rect width="256" height="256" fill="none"></rect>
+                      <path
+                        d="M232.3125,114.34375,88.34375,26.35937A15.99781,15.99781,0,0,0,64,40.00781V215.99219a16.00521,16.00521,0,0,0,24.34375,13.64843L232.3125,141.65625a16.00727,16.00727,0,0,0,0-27.3125Z">
+                      </path>
+                    </svg>
+                  </button>
+                  <div class="podcast-progression">
+
+                  </div>
+                  <span class="podcast-time">23:45</span>
+                </div>
+                <div class="article-podcast-info">
+                  Apple Podcasts, Google Podcasts, Stitcher
+                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-3.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>David Sherof</dt>
+                      <dd>Reporter</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+  <div class="overlay-app"></div>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+  <script src='https://unpkg.com/phosphor-icons'></script>
+
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js'></script>
+  <script
+    src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>IBM Jeev ❄️</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.6/css/line.css'>
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../search/style.css">
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+</head>
+
+<body>
+  <!-- Canvas -->
+  <canvas class="orb-canvas"></canvas>
+  <div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    </svg>
+  </div>
+  <div class="app">
+    <div class="header">
+      <div class="menu-logo">IBM <span class="text-gradient">JEEV </span></div>
+      <div class="header-menu">
+        <a class="menu-link is-active" href="#">Dashboard</a>
+        <a class="menu-link notify" href="#">Your Work</a>
+        <a class="menu-link" href="../assistant/index.html">Discover</a>
+        <a class="menu-link notify" href="../market/index.html">Market</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Your Repository">
+      </div>
+      <div class="header-profile">
+        <div class="notification">
+          <span class="notification-number">3</span>
+          <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="feather feather-bell">
+            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+          </svg>
+        </div>
+        <svg viewBox="0 0 512 512" fill="currentColor">
+          <path
+            d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z" />
+        </svg>
+        <img class="profile-img"
+          src="https://images.unsplash.com/photo-1600353068440-6361ef3a86e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+          alt="">
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="left-side">
+        <div class="side-wrapper">
+          <div class="side-title">Portfolio Management</div>
+          <div class="side-menu">
+            <a href="#">
+              <i class="ph-briefcase-light"></i>
+              Portfolio
+            </a>
+            <a href="#">
+              <i class="ph-arrow-clockwise-light"></i>
+              Updates
+              <span class="notification-number updates">3</span>
+            </a>
+            <a href="#">
+              <i class="ph-camera-light"></i>
+              Snapshot
+            </a>
+          </div>
+        </div>
+        <div class="side-wrapper">
+          <div class="side-title">Your Work</div>
+          <div class="side-menu">
+
+            <a href="#">
+              <i class="ph-floppy-disk-light"></i>
+              Saved Work
+            </a>
+            <a href="#">
+              <i class="ph-rss-light"></i>
+              Your Topics
+            </a>
+            <a href="#">
+              <i class="ph-check-square-offset-light"></i>
+              Review
+            </a>
+          </div>
+        </div>
+        <div class="side-wrapper">
+          <div class="side-title">Manage</div>
+          <div class="side-menu">
+            <a href="#">
+              <i class="ph-export-light"></i>
+              Export
+            </a>
+            <a href="#">
+              <i class="ph-download-simple-light"></i>
+              Import
+            </a>
+            <a href="#">
+              <i class="ph-clock-counter-clockwise-light"></i>
+              History
+            </a>
+          </div>
+        </div>
+        <div class="side-wrapper">
+          <div class="side-title">Resource Links</div>
+          <div class="side-menu">
+            <a href="#">
+              <svg viewBox="0 0 511.441 511.441" fill="currentColor">
+                <path d="M255.721 347.484L90.22 266.751v106.57l165.51 73.503 165.509-73.503V266.742z" />
+                <path
+                  d="M511.441 189.361L255.721 64.617 0 189.361l255.721 124.744 195.522-95.378v111.032h30V204.092z" />
+              </svg>
+              Tutorials
+            </a>
+            <a href="#">
+              <svg viewBox="0 0 512 512" fill="currentColor">
+                <path
+                  d="M352 0H64C28.704 0 0 28.704 0 64v320a16.02 16.02 0 009.216 14.496A16.232 16.232 0 0016 400c3.68 0 7.328-1.248 10.24-3.712L117.792 320H352c35.296 0 64-28.704 64-64V64c0-35.296-28.704-64-64-64z" />
+                <path
+                  d="M464 128h-16v128c0 52.928-43.072 96-96 96H129.376L128 353.152V400c0 26.464 21.536 48 48 48h234.368l75.616 60.512A16.158 16.158 0 00496 512c2.336 0 4.704-.544 6.944-1.6A15.968 15.968 0 00512 496V176c0-26.464-21.536-48-48-48z" />
+              </svg>
+              Contact Support
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <!--<div class="main-header">
+          <a class="menu-link-main" href="#">All Apps</a>
+          <div class="header-menu">
+            <a class="main-header-link is-active" href="#">Desktop</a>
+            <a class="main-header-link" href="#">Mobile</a>
+            <a class="main-header-link" href="#">Web</a>
+
+          </div>-->
+      </div>
+      <div class="content-wrapper">
+        <div class="content-wrapper-header">
+          <div class="search">
+            <form>
+              <input type="text">
+            </form>
+            <div class="bar">
+              <div class="icon">
+                <i></i>
+              </div>
+            </div>
+            <div class="close"></div>
+            <ul>
+              <li>
+                <a href="https://socgen.com" target="_blank">
+                  <img
+                    src="https://play-lh.googleusercontent.com/iC5BWs2LnbZmkTD2PHVfOypPUinF7SY7e39h0TY9_bwyrC_cTqY-gJ20NXb9-IZSBg">
+                  <h5>Societe Generale</h5>
+                  <p>Published and cited the report at</p>
+                  <span>https://socgen.com/</span>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.clarity.ai/" target="_blank">
+                  <img class="queble"
+                    src="https://cdn.dribbble.com/users/1763851/avatars/normal/0e0aa5c6da81f17d43efa9c92c76a70d.png">
+                  <h5>Clarity.ai</h5>
+                  <p>Citing and attesting more at</p>
+                  <span>http://clarity.ai</span>
+                </a>
+              </li>
+            </ul>
+
+            <button class="resume-button">Resume your work</button>
+          </div>
+
+          <div class="content-wrapper-context">
+            <h3 class="img-content">
+              Hello, Rajat.
+              Your insights are ready!
+            </h3>
+            <div class="content-text">According to Jeev, you need to cite <strong>3 items</strong> and you have
+              <strong>2 items</strong> that might have erroneous data in your current work.
+            </div>
+            <button class="content-button">Read here</button>
+          </div>
+          <div class="tiles" style="display: none;">
+            <article class="tile">
+              <div class="tile-header">
+                <i class="ph-lightning-light"></i>
+                <h3>
+                  <span>20 Comparison Insights</span>
+                  <span>3 related to your work</span>
+                </h3>
+              </div>
+            </article>
+            <article class="tile">
+              <div class="tile-header">
+                <i class="ph-fire-simple-light"></i>
+                <h3>
+                  <span>Trending Now</span>
+                  <span>Cited in 11 news articles in past 24 hours</span>
+                </h3>
+              </div>
+            </article>
+            <article class="tile">
+              <div class="tile-header">
+                <i class="ph-activity-light"></i>
+                <h3>
+                  <span>Price decrease</span>
+                  <span>Stock price 3% down in last 24 hours</span>
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="content-section">
+          <div class="content-section-title">Stocks under watch</div>
+          <ul>
+            <li>
+              <div class="products">
+                <i class="ph-snapchat-logo-light"></i>
+                Snap Inc.
+              </div>
+              <span class="status">
+                <span class="status-circle green"></span>
+                Positive</span>
+              <div class="button-wrapper">
+                <button class="content-button status-button open">Open</button>
+                <div class="menu">
+                  <button class="dropdown">
+                    <ul>
+                      <li><a href="#">Go to Discover</a></li>
+                      <li><a href="#">Learn more</a></li>
+                      <li><a href="#">Mark as pending</a></li>
+                    </ul>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="products">
+                <i class="ph-apple-logo-light"></i>
+                Apple Inc.
+              </div>
+              <span class="status">
+                <span class="status-circle red"></span>
+                Negative</span>
+              <div class="button-wrapper">
+                <button class="content-button status-button cancel">Cancel</button>
+                <div class="menu">
+                  <button class="dropdown">
+                    <ul>
+                      <li><a href="#">Go to Discover</a></li>
+                      <li><a href="#">Learn more</a></li>
+                      <li><a href="#">Mark as pending</a></li>
+                    </ul>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="products">
+                <i class="ph-windows-logo-light"></i>
+                Microsoft Inc.
+              </div>
+              <span class="status">
+                <span class="status-circle green"></span>
+                Consistent</span>
+              <div class="button-wrapper">
+                <button class="content-button status-button open">Open</button>
+                <div class="menu">
+                  <button class="dropdown">
+                    <ul>
+                      <li><a href="#">Go to Discover</a></li>
+                      <li><a href="#">Learn more</a></li>
+                      <li><a href="#">Mark as pending</a></li>
+                    </ul>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-section">
+          <div class="content-section-title">Your Portfolio Insights</div>
+          <div class="apps-card">
+            <div class="app-card">
+              <span>
+                <i class="ph-trend-up-light"></i>
+                Increased Exposure
+              </span>
+              <div class="app-card__subtext">The ratio towards marked companies has increased</div>
+              <div class="app-card-buttons">
+                <button class="content-button status-button">Verify</button>
+                <div class="menu"></div>
+              </div>
+            </div>
+            <div class="app-card">
+              <span>
+                <i class="ph-trend-down-light"></i>
+                Decreased Risk
+              </span>
+              <div class="app-card__subtext">The portfolio is performing well against the market</div>
+              <div class="app-card-buttons">
+                <button class="content-button status-button">Verify</button>
+                <div class="menu"></div>
+              </div>
+            </div>
+            <div class="app-card">
+              <span>
+                <i class="ph-warning-circle-light"></i>
+                Weighted ESG Decreased
+              </span>
+              <div class="app-card__subtext">Please check the suggestions and insights</div>
+              <div class="app-card-buttons">
+                <button class="content-button status-button">Verify</button>
+                <div class="menu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section">
+          <div class="content-section-title">Current Status</div>
+          <section class="charts mt-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="chart-container">
+                  <h3 class="fs-6 mb-3">Valuation vs Market</h3>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="chart-container">
+                  <h3 class="fs-6 mb-3">Estimated Revenue vs Average</h3>
+                  <canvas id="myChart2"></canvas>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="overlay-app"></div>
+  </div>
+
+  <script src='https://unpkg.com/phosphor-icons'></script>
+  <script type="module" src="./script.js"></script>
+  <script src="../search/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js'></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.jshttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
