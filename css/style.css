@@ -1558,7 +1558,7 @@ info bar
 .info-bar .knowledge-list li {
   list-style-type: none;
   margin-bottom: 5px;
-  color: var(--body_text);
+  color: var(--main_text);
 }
 
 .info-bar .knowledge-list li:last-child {
